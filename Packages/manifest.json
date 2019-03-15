@@ -1,12 +1,21 @@
 {
   "dependencies": {
     "com.unity.collab-proxy": "1.2.15",
-    "com.unity.package-manager-ui": "2.0.3",
+    "com.unity.package-manager-ui": "2.1.1",
+    "com.unity.timeline": "exclude",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
+    "com.unity.modules.audio": "1.0.0",
+    "com.unity.modules.director": "1.0.0",
+    "com.unity.modules.jsonserialize": "1.0.0",
     "com.unity.modules.particlesystem": "1.0.0",
     "com.unity.modules.physics": "1.0.0",
     "com.unity.modules.physics2d": "1.0.0",
-    "com.unity.modules.ui": "1.0.0"
+    "com.unity.modules.ui": "1.0.0",
+    "com.unity.modules.unitywebrequest": "1.0.0",
+    "com.unity.modules.video": "1.0.0",
+    "com.unity.modules.vr": "exclude",
+    "com.unity.modules.xr": "exclude",
+    "com.unity.xr.legacyinputhelpers": "exclude"
   }
 }

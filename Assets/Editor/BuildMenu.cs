@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BuildMenu
 {
-    [MenuItem("Build/Build Web")]
+    [MenuItem("Build/Build for WebAssembly")]
     public static void BuildWeb()
     {
         BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
@@ -48,14 +48,20 @@ public class BuildMenu
         }
     }
 
-    [MenuItem("Build/Build Web With Threads")]
+    [MenuItem("Build/Build for WebAssembly With Threads")]
     public static void BuildWebWithThreads()
     {
+        // save player settings        
         var threadsSupport = PlayerSettings.WebGL.threadsSupport;
+        var memorySize = PlayerSettings.WebGL.memorySize;
+        
         PlayerSettings.WebGL.threadsSupport = true;
+        PlayerSettings.WebGL.memorySize = 768; // workaround for lack of heap growth when using multi-threading
 
         BuildWeb();
-        
+
+        // restore settings
         PlayerSettings.WebGL.threadsSupport = threadsSupport;
+        PlayerSettings.WebGL.memorySize = memorySize;
     }
 }
