@@ -1,4 +1,4 @@
-#Unity Benchmark
+# Unity Benchmark
 This project is a set of scenes which aim to stress different parts of the Unity engine and to calculate a score.
 
 It has been used to compare browsers performance when running Unity WebGL content. The results were puslished as Unity blog posts (most recent to oldest):
